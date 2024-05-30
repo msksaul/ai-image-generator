@@ -144,9 +144,9 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
           value
         }
       }))
+    }, 1000)()
 
-      return onChangeField(value)
-    }, 1000)
+    return onChangeField(value)
   }
 
   const onTransformHandler = async () => {
@@ -242,7 +242,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
                     onChange={(e) => onInputChangeHandler(
                       'color',
                       e.target.value,
-                      type,
+                      'recolor',
                       field.onChange
                     )}
                   />

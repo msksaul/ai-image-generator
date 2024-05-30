@@ -43,8 +43,8 @@ const TransformedImage = ({
           <CldImage
             width={getImageSize(type, image, 'width')}
             height={getImageSize(type, image, 'height')}
-            src={image?.public_id}
-            alt={image.title}
+            src={image?.publicId}
+            alt={title}
             sizes={'(max-width: 767px) 100vw 50vw'}
             placeholder={dataUrl as PlaceholderValue}
             className='transformed-image'
