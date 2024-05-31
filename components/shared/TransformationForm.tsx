@@ -139,7 +139,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
       setNewTransformation((prevState: any) => ({
         ...prevState,
         [type]: {
-          ...prevState?.type,
+          ...prevState?.[type],
           [fieldName === 'prompt' ? 'prompt' : 'to']: value
         }
       }))
